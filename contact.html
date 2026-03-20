@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GIANT INNOVATIVE CRAFT LTD.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon"></span>
+            <span class="logo-text">GIANT INNOVATIVE CRAFT LTD.</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> / <span class="current">Contact</span>
+            </nav>
+
+            <h1 class="page-title">Get In <span class="highlight">Touch</span></h1>
+            <p class="page-subtitle">Ready to bring your construction vision to life? Let's discuss your project and turn your dreams into reality.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>We're here to help you with all your construction needs. Reach out to us through any of the channels below, and our team will get back to you promptly.</p>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3>Office Address</h3>
+                        <p>The  Saints Int Research HUB, Opp. Christ The King Catholic Church,<br> Shell Camp, Owerri</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p> +234 (070) 6601-8180, <br> +234 (070) 3937-0182</p>
+                    </div>
+                </div>
+
+                <div class="info-item email-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Email Address</h3>
+                        <p>Ifeanyigoldenworld@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+
+                <form id="contactForm" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <span class="error-message" id="firstNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <span class="error-message" id="lastNameError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectType">Project Type *</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="">Select Project Type</option>
+                            <option value="residential">Residential Construction</option>
+                            <option value="commercial">Commercial Building</option>
+                            <option value="industrial">Industrial Facility</option>
+                            <option value="renovation">Renovation & Remodeling</option>
+                            <option value="consultation">Consultation Services</option>
+                        <span class="error-message" id="projectTypeError"></span>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select Budget Range</option>
+                            <option value="under-50m">Under ₦50 Million</option>
+                            <option value="50m-200m">₦50M - ₦200M</option>
+                            <option value="200m-500m">₦200M - ₦500M</option>
+                            <option value="500m-1b">₦500M - ₦1B</option>
+                            <option value="over-1b">Over ₦1 Billion</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Preferred Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select Timeline</option>
+                            <option value="asap">ASAP</option>
+                            <option value="1-3-months">1-3 Months</option>
+                            <option value="3-6-months">3-6 Months</option>
+                            <option value="6-12-months">6-12 Months</option>
+                            <option value="planning">Still Planning</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <span class="error-message" id="messageError"></span>
+                        <textarea id="message" name="message" placeholder="Please describe your project requirements, location, and any specific needs..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <h2>Find Our Office</h2>
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2721.3479606540063!2d6.995321782494202!3d5.512738973249898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104251afa141a913%3A0x9aa9c945307358c7!2sMawiz%20Technologies%20Ltd!5e0!3m2!1sen!2sng!4v1774022195731!5m2!1sen!2sng"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-placeholder">GC</div>
+                    <span class="footer-brand">GIANT INNOVATIVE CRAFT LTD.</span>
+                </div>
+                <p>Building your vision with precision, innovation, and excellence. Your trusted partner in construction and architectural solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Our Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Residential Construction</a></li>
+                    <li><a href="#">Commercial Building</a></li>
+                    <li><a href="#">Industrial Facilities</a></li>
+                </ul>
+            </div>
+
+          <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> The  Saints Int Research HUB, Opp. Christ The King Catholic Church, Shell Camp, Owerri</a></li>
+                    <li><a href="tel:+2347066018180"><i class="fas fa-phone"></i>  +234 (070) 6601-8180, +234 (070) 3937-0182</a></li>
+                    <li><a href="mailto:Ifeanyigoldenworld@gmail.com"><i class="fas fa-envelope"></i>Ifeanyigoldenworld@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 GIANT INNOVATIVE CRAFT LTD. All rights reserved. | Designed with precision and care.</p>
+        </div>
+    </footer>
+
+    <script src="srcipts.js"></script>
+</body>
+</html>
