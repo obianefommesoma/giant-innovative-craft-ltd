@@ -1,3 +1,23 @@
+// Hamburger Menu Toggle
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navLinks = document.getElementById('navLinks');
+
+if (hamburgerBtn && navLinks) {
+    hamburgerBtn.addEventListener('click', function() {
+        hamburgerBtn.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    const navItems = navLinks.querySelectorAll('a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            hamburgerBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+}
+
 // Project filtering functionality
 document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
