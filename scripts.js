@@ -170,9 +170,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const hamburgerBtn = document.getElementById("hamburgerBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+const navLinks = document.querySelector(".nav-links");
 
-hamburgerBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
+hamburgerBtn.addEventListener("click", function () {
+  navLinks.classList.toggle("active");
+  hamburgerBtn.classList.toggle("active");
 });
+
+
+
+
 
